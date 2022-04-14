@@ -24,7 +24,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
       { path: 'hello-world-bindings', component: HelloWorldBindingsComponent },
       { path: 'hello-world-di', component: HelloWorldDiComponent },
       { path: 'hello-world-interpolation', component: HelloWorldInterpolationComponent },
-      { path: 'hello-world-ngif', component: HelloWorldNgifComponent }
+      { path: 'hello-world-ngif', component: HelloWorldNgifComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent}
     ])
   ],
   declarations: [
