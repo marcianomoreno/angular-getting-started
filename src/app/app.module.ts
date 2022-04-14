@@ -26,7 +26,8 @@ import { CartComponent } from './cart/cart.component';
       { path: 'hello-world-di', component: HelloWorldDiComponent },
       { path: 'hello-world-interpolation', component: HelloWorldInterpolationComponent },
       { path: 'hello-world-ngif', component: HelloWorldNgifComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent}
+      { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'cart', component: CartComponent }
     ])
   ],
   declarations: [
