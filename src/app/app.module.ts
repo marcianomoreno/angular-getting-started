@@ -7,6 +7,11 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
+import { HelloWorldBindingsComponent } from './hello-world-bindings/hello-world-bindings.component';
+import { HelloWorldDiComponent } from './hello-world-di/hello-world-di.component';
+import { HelloWorldInterpolationComponent } from './hello-world-interpolation/hello-world-interpolation.component';
+import { HelloWorldNgifComponent } from './hello-world-ngif/hello-world-ngif.component';
 
 @NgModule({
   imports: [
@@ -14,13 +19,23 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'hello-world', component: HelloWorldComponent },
+      { path: 'hello-world-bindings', component: HelloWorldBindingsComponent },
+      { path: 'hello-world-di', component: HelloWorldDiComponent },
+      { path: 'hello-world-interpolation', component: HelloWorldInterpolationComponent },
+      { path: 'hello-world-ngif', component: HelloWorldNgifComponent }
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    HelloWorldComponent,
+    HelloWorldBindingsComponent,
+    HelloWorldDiComponent,
+    HelloWorldInterpolationComponent,
+    HelloWorldNgifComponent
   ],
   bootstrap: [
     AppComponent
