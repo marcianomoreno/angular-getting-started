@@ -13,6 +13,7 @@ import { HelloWorldDiComponent } from './hello-world-di/hello-world-di.component
 import { HelloWorldInterpolationComponent } from './hello-world-interpolation/hello-world-interpolation.component';
 import { HelloWorldNgifComponent } from './hello-world-ngif/hello-world-ngif.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   imports: [
@@ -38,7 +39,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HelloWorldDiComponent,
     HelloWorldInterpolationComponent,
     HelloWorldNgifComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CartComponent
   ],
   bootstrap: [
     AppComponent
