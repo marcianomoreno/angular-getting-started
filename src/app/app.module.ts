@@ -12,6 +12,7 @@ import { HelloWorldBindingsComponent } from './hello-world-bindings/hello-world-
 import { HelloWorldDiComponent } from './hello-world-di/hello-world-di.component';
 import { HelloWorldInterpolationComponent } from './hello-world-interpolation/hello-world-interpolation.component';
 import { HelloWorldNgifComponent } from './hello-world-ngif/hello-world-ngif.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { HelloWorldNgifComponent } from './hello-world-ngif/hello-world-ngif.com
     HelloWorldBindingsComponent,
     HelloWorldDiComponent,
     HelloWorldInterpolationComponent,
-    HelloWorldNgifComponent
+    HelloWorldNgifComponent,
+    ProductDetailsComponent
   ],
   bootstrap: [
     AppComponent
