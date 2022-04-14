@@ -30,7 +30,8 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: 'hello-world-interpolation', component: HelloWorldInterpolationComponent },
       { path: 'hello-world-ngif', component: HelloWorldNgifComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent }
+      { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent }
     ])
   ],
   declarations: [
