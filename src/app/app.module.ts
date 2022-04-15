@@ -52,7 +52,8 @@ import { MatMenuModule } from '@angular/material/menu';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'address', component: AddressFormComponent },
-      { path: 'navigation', component: NavigationComponent}
+      { path: 'navigation', component: NavigationComponent},
+      { path: 'dashboard', component: DashboardComponent}
     ]),
     BrowserAnimationsModule,
     MatInputModule,
