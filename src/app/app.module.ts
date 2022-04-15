@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
+import { MatSliderModule } from '@angular/material/slider';
  
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -17,11 +19,18 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AddressFormComponent } from './address-form/address-form.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
+    MatSliderModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
@@ -32,9 +41,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       { path: 'hello-world-ngif', component: HelloWorldNgifComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent }
+      { path: 'shipping', component: ShippingComponent },
+      { path: 'address', component: AddressFormComponent }
     ]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule
   ],
   declarations: [
     AppComponent,
@@ -48,7 +63,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HelloWorldNgifComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    AddressFormComponent
   ],
   bootstrap: [
     AppComponent
