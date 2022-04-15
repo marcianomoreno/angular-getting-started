@@ -25,6 +25,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
+import { NavigationComponent } from './navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   imports: [
@@ -42,14 +48,20 @@ import { MatCardModule } from '@angular/material/card';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
-      { path: 'address', component: AddressFormComponent }
+      { path: 'address', component: AddressFormComponent },
+      { path: 'navigation', component: NavigationComponent}
     ]),
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
     MatRadioModule,
-    MatCardModule
+    MatCardModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   declarations: [
     AppComponent,
@@ -64,7 +76,8 @@ import { MatCardModule } from '@angular/material/card';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    AddressFormComponent
+    AddressFormComponent,
+    NavigationComponent
   ],
   bootstrap: [
     AppComponent
