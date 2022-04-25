@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://nestjsprisma101linux.azurewebsites.net/api',
+  apiUrl: 'https://nestjsprisma101linux.azurewebsites.net/api',
 };
 
 
