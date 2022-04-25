@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import  { AuthModule } from '@auth0/auth0-angular';
+
 import { MatSliderModule } from '@angular/material/slider';
  
 import { AppComponent } from './app.component';
@@ -34,10 +36,15 @@ import { MatListModule } from '@angular/material/list';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
+import { DrumsComponent } from './drums/drums.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+    AuthModule.forRoot({
+      domain: 'dev-6st81zb5.us.auth0.com',
+      clientId: 'IOdA4MSchn0NKmkV81D9gOn7QyCaPTlW'
+    }),
     HttpClientModule,
     MatSliderModule,
     ReactiveFormsModule,
@@ -53,7 +60,8 @@ import { MatMenuModule } from '@angular/material/menu';
       { path: 'shipping', component: ShippingComponent },
       { path: 'address', component: AddressFormComponent },
       { path: 'navigation', component: NavigationComponent},
-      { path: 'dashboard', component: DashboardComponent}
+      { path: 'dashboard', component: DashboardComponent},
+      { path: 'drums', component: DrumsComponent},
     ]),
     BrowserAnimationsModule,
     MatInputModule,
@@ -84,7 +92,8 @@ import { MatMenuModule } from '@angular/material/menu';
     ShippingComponent,
     AddressFormComponent,
     NavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    DrumsComponent
   ],
   bootstrap: [
     AppComponent

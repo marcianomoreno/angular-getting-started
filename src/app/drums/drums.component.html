@@ -1,0 +1,6 @@
+<h3>Drum list</h3>
+
+<div *ngFor="let drum of drums | async">
+  <span>{{ drum.id }}</span>
+  <span>{{ drum.name }}</span>
+</div>
